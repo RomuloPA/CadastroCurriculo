@@ -4,11 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles.css" media="screen">
     <title>Cadastro Currículo</title>
 </head>
 <body>
+
     <div>
         <h1>Cadastro Currículo</h1>
+        <p>Preencha o formulário abaixo:</p>
     </div>
+
+    <form>
+
+        <fieldset>
+            <div><h2>Dados Pessoais</h2></div>
+
+            <div>
+                <label for="nome"><strong>Nome Completo:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            
+            <div>
+                <label for="nacionalidade"><strong>Nascionalidade:</strong></label>
+                <input type="text" name="nascionalidade" id="nascionalidade" required>
+            </div>
+
+            <div>
+                <label for="estadoCivil"><strong>Estado Civil:</strong></label>
+                <select id="estadoCivil" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Solteiro(a)</option>
+                  <option>Casado(a)</option>
+                  <option>União Estável</option>
+                  <option>Separado(a)</option>
+                  <option>Divorciado(a)</option>
+                  <option>Viúvo(a)</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="idade"><strong>Idade:</strong></label>
+                <input type="text" name="idade" id="idade" required>
+            </div>
+
+            <div>
+                <label for="estado"><strong>Estado:</strong></label>
+                <select id="UF" name="UF" required>
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <label for="cidade"><strong>Cidade:</strong></label>
+                <input type="text" name="cidade" id="cidade" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div><h2>Contato</h2></div>
+
+            <div>
+                <label for="telefone"><strong>Telefone:</strong></label>
+                <input type="text" name="telefone" id="telefone" required>
+            </div>
+
+            <div>
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="text" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="linkedin"><strong>Linkedin:</strong></label>
+                <input type="text" name="linkedin" id="linkedin" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div><h2>Sobre</h2></div>
+
+            <div>
+                <label for="sobre"><strong>Sobre:</strong></label>
+                <input type="text" name="sobre" id="sobre" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div><h2>Objetivo</h2></div>
+
+            <div>
+                <label for="objetivo"><strong>Objetivo:</strong></label>
+                <input type="text" name="objetivo" id="objetivo" required>
+            </div>
+        </fieldset>
+
+    </form>
+
 </body>
+
 </html>
