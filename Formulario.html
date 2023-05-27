@@ -11,18 +11,20 @@
 
     <div>
         <h1 id="titulo">Cadastre seu Currículo</h1>
-        <p id="subtitulo">Preencha o formulário abaixo:</p>
+        <p id="subtitulo"><strong>Preencha o formulário abaixo:</strong></p>
     </div>
 
     <form>
 
         <fieldset class="grupo">
-            <legend><strong>Dados Pessoais</strong></legend>
+            <legend><strong><u>Dados Pessoais</u></strong></legend>
         <fieldset class="grupos">
             <div class="campo">
+            </br>
                 <label for="nome"><strong>Nome Completo*</strong></label>
                 <input type="text" placeholder="Ex: João da Silva" name="nome" id="nome" size="60" required>
             </div>
+        </br>
 
             <div class="campo">
                 <label for="nacionalidade"><strong>Nascionalidade*</strong></label>
@@ -92,9 +94,11 @@
         </fieldset>
         </fieldset>
 
+        </br>
         <fieldset>
             <legend><strong>Contato</strong></legend>
-
+            
+            </br>
             <div class="campo">
                 <label for="telefone"><strong>Telefone*</strong></label>
                 <input type="tel" placeholder="DDD + número" name="telefone" id="telefone" size="20" required>
@@ -111,29 +115,34 @@
             </div>
         </fieldset>
 
+        </br>
         <fieldset>
             <legend><strong>Sobre</strong></legend>
 
+            </br>
             <div class="campo">
                 <label for="sobre"><strong>Nos conte sobre seu perfil e experiência profissional*</strong></label>
                 <textarea rows="5" style="width: 650px" name="sobre" id="sobre" size="1000" required></textarea>
             </div>
         </fieldset>
 
+        </br>
         <fieldset>
             <legend><strong>Objetivo</strong></legend>
 
+            </br>
             <div class="campo">
                 <label for="objetivo"><strong>Qual seu objetivo profissional*</strong></label>
                 <textarea rows="5" style="width: 650px" name="objetivo" id="objetivo" required></textarea>
             </div>
         </fieldset>
 
+        </br>
         <p class="anexo">Anexar currículo (PDF, Doc ou Docx)</p>
         <label for="curriculo" id="label-curriculo">Selecionar arquivo</label> <br/>
         <input type="file" id="botaoEscolherArquivo" name="curriculo" accept=".pdf, .doc, .docx" required>
 
-        </br>
+        </br></br>
 
         <button class="botao" id="enviar" type="submit">Enviar</button>
     </form>
