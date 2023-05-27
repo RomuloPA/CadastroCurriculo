@@ -10,26 +10,33 @@
 <body>
 
     <div>
-        <h1>Cadastre seu Currículo</h1>
-        <p>Preencha o formulário abaixo:</p>
+        <h1 id="titulo">Cadastre seu Currículo</h1>
+        <p id="subtitulo">Preencha o formulário abaixo:</p>
     </div>
 
     <form>
 
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <div>
+        <fieldset class="grupo">
+            <legend><strong>Dados Pessoais</strong></legend>
+        <fieldset class="grupos">
+            <div class="campo">
                 <label for="nome"><strong>Nome Completo*</strong></label>
                 <input type="text" placeholder="Ex: João da Silva" name="nome" id="nome" size="60" required>
+            </div>
 
+            <div class="campo">
                 <label for="nacionalidade"><strong>Nascionalidade*</strong></label>
                 <input type="text" placeholder="Ex: Brasileiro" name="nascionalidade" id="nascionalidade" size="37" required>
             </div>
-
-            <div>
+        </fieldset>
+        
+        <fieldset class="grupos">
+            <div class="campo">
                 <label for="data de nascimento"><strong>Data de Nascimento*</strong></label>
-                <input id="date" type="date" required>
+                <input id="date" type="date"     required>
+            </div>
 
+            <div class="campo">
                 <label for="estadoCivil"><strong>Estado Civil*</strong></label>
                 <select id="estadoCivil" required>
                   <option selected disabled value="">Selecione</option>
@@ -41,11 +48,15 @@
                   <option>Viúvo(a)</option>
                 </select>
             </div>
+        </fieldset>  
 
-            <div>
+        <fieldset class="grupos">
+            <div class="campo">
                 <label for="cidade"><strong>Cidade*</strong></label>
                 <input type="text" placeholder="Cidade onde mora atualmente" name="cidade" id="cidade" size="40" required>
+            </div>
 
+            <div class="campo">
                 <label for="estado"><strong>Estado*</strong></label>
                 <select id="UF" name="UF" required>
                     <option value="">Selecione</option>
@@ -79,52 +90,54 @@
                 </select>
             </div>
         </fieldset>
+        </fieldset>
 
         <fieldset>
-            <legend>Contato</legend>
+            <legend><strong>Contato</strong></legend>
 
-            <div>
+            <div class="campo">
                 <label for="telefone"><strong>Telefone*</strong></label>
-                <input type="text" placeholder="DDD + número" name="telefone" id="telefone" required>
+                <input type="tel" placeholder="DDD + número" name="telefone" id="telefone" size="20" required>
             </div>
 
-            <div>
+            <div class="campo">
                 <label for="email"><strong>E-mail*</strong></label>
-                <input type="text" placeholder="exemplo@exempplo.com" name="email" id="email" required>
+                <input type="email" placeholder="exemplo@exempplo.com" name="email" id="email" size="50" required>
             </div>
 
-            <div>
+            <div class="campo">
                 <label for="linkedin"><strong>Linkedin</strong></label>
-                <input type="text" placeholder="Adicione o link do seu Linkedin" name="linkedin" id="linkedin">
+                <input type="text" placeholder="Adicione o link do seu Linkedin" name="linkedin" size="50" id="linkedin">
             </div>
         </fieldset>
 
         <fieldset>
-            <legend>Sobre</legend>
+            <legend><strong>Sobre</strong></legend>
 
-            <div>
+            <div class="campo">
                 <label for="sobre"><strong>Nos conte sobre seu perfil e experiência profissional*</strong></label>
                 <textarea rows="5" style="width: 650px" name="sobre" id="sobre" size="1000" required></textarea>
             </div>
         </fieldset>
 
         <fieldset>
-            <legend>Objetivo</legend>
+            <legend><strong>Objetivo</strong></legend>
 
-            <div>
+            <div class="campo">
                 <label for="objetivo"><strong>Qual seu objetivo profissional*</strong></label>
                 <textarea rows="5" style="width: 650px" name="objetivo" id="objetivo" required></textarea>
             </div>
         </fieldset>
 
-        <p>Anexar currículo (PDF, Doc ou Docx)</p>
+        <p class="anexo">Anexar currículo (PDF, Doc ou Docx)</p>
         <label for="curriculo" id="label-curriculo">Selecionar arquivo</label> <br/>
-        <input type="file" id="curriculo" name="curriculo" accept=".pdf, .doc, .docx" required>
+        <input type="file" id="botaoEscolherArquivo" name="curriculo" accept=".pdf, .doc, .docx" required>
 
-        <button id="enviar" type="submit">Enviar</button>
+        </br>
+
+        <button class="botao" id="enviar" type="submit">Enviar</button>
     </form>
 
 </body>
-
 
 </html>
