@@ -16,15 +16,14 @@
 
     <form>
 
-        <fieldset class="grupo">
-            <legend><strong><u>Dados Pessoais</u></strong></legend>
         <fieldset class="grupos">
+            <legend><strong><u>Dados Pessoais</u></strong></legend>
             <div class="campo">
             </br>
                 <label for="nome"><strong>Nome Completo*</strong></label>
                 <input type="text" placeholder="Ex: João da Silva" name="nome" id="nome" size="60" required>
             </div>
-        </br>
+            </br>
 
             <div class="campo">
                 <label for="nacionalidade"><strong>Nascionalidade*</strong></label>
@@ -35,7 +34,7 @@
         <fieldset class="grupos">
             <div class="campo">
                 <label for="data de nascimento"><strong>Data de Nascimento*</strong></label>
-                <input id="date" type="date"     required>
+                <input id="date" type="date" style="width: 160px;"    required>
             </div>
 
             <div class="campo">
@@ -95,8 +94,8 @@
         </fieldset>
 
         </br>
-        <fieldset>
-            <legend><strong>Contato</strong></legend>
+        <fieldset class="grupo">
+            <legend><strong><u>Contato</u></strong></legend>
             
             </br>
             <div class="campo">
@@ -116,28 +115,28 @@
         </fieldset>
 
         </br>
-        <fieldset>
-            <legend><strong>Sobre</strong></legend>
+        <fieldset class="grupo">
+            <legend><strong><u>Sobre</u></strong></legend>
 
             </br>
             <div class="campo">
                 <label for="sobre"><strong>Nos conte sobre seu perfil e experiência profissional*</strong></label>
-                <textarea rows="5" style="width: 650px" name="sobre" id="sobre" size="1000" required></textarea>
+                <textarea rows="5" style="width: 1030px" name="sobre" id="sobre" size="1000" required></textarea>
             </div>
         </fieldset>
 
         </br>
-        <fieldset>
-            <legend><strong>Objetivo</strong></legend>
+        <fieldset class="grupo">
+            <legend><strong><u>Objetivo</u></strong></legend>
 
             </br>
             <div class="campo">
                 <label for="objetivo"><strong>Qual seu objetivo profissional*</strong></label>
-                <textarea rows="5" style="width: 650px" name="objetivo" id="objetivo" required></textarea>
+                <textarea rows="5" style="width: 1030px" name="objetivo" id="objetivo" required></textarea>
             </div>
         </fieldset>
 
-        </br>
+        </br></br>
         <p class="anexo">Anexar currículo (PDF, Doc ou Docx)</p>
         <label for="curriculo" id="label-curriculo">Selecionar arquivo</label> <br/>
         <input type="file" id="botaoEscolherArquivo" name="curriculo" accept=".pdf, .doc, .docx" required>
